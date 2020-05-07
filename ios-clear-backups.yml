@@ -31,14 +31,14 @@
           name: "IOS Check for Configuration Drift"
           job_type: "run"
           # inventory: "IOS Github-sourced Routers"
-          project: "Ansible IOS Demo Exercises"
+          project: "ansible-ios"
           playbook: "ios-drift-detect.yml"
           # credential: "maf-ios-demo-private"
           # survey_enabled: true
           # survey_spec: "{{ lookup('template', '/tmp/drift_survey.json') }}"
           tower_username: "{{ TOWER_USERNAME }}"
           tower_password: "{{ TOWER_PASSWORD }}"
-          tower_host: https://ansibletower.michaelanthonyford.com
+          tower_host: https://tower.davidcastellani.net
           validate_certs: no
           # diff_mode_enabled: yes
           state: absent
@@ -49,14 +49,14 @@
           name: "IOS Restore Config from Backup"
           job_type: "run"
           # inventory: "IOS Github-sourced Routers"
-          project: "Ansible IOS Demo Exercises"
+          project: "ansible-ios"
           playbook: "ios-restore-config.yml"
           # credential: "maf-ios-demo-private"
           # survey_enabled: true
           # survey_spec: "{{ lookup('template', '/tmp/restore_survey.json') }}"
           tower_username: "{{ TOWER_USERNAME }}"
           tower_password: "{{ TOWER_PASSWORD }}"
-          tower_host: https://ansibletower.michaelanthonyford.com
+          tower_host: https://tower.davidcastellani.net
           validate_certs: no
           state: absent
       delegate_to: localhost
