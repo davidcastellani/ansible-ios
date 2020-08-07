@@ -5,6 +5,7 @@ rtr2 ansible_host=3.82.21.25 site=2
 rtr3 ansible_host=54.152.227.229 site=3
 rtr4 ansible_host=3.95.64.149 site=4
 rtr5 ansible_host=1.1.1.1
+rtr6 ansible_host=2.2.2.2
 
 [ios:vars]
 ansible_network_os=ios
